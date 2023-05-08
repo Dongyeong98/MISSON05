@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="stylesheet" href="./assets/iconfontsvg/style.css" />
     <script type="module" src="./js/main.js"></script>
   </head>
 
@@ -29,16 +30,50 @@
         </button>
       </div>
     </header>
-
     <nav class="navigation">
       <!-- 내비게이션 영역 -->
       <!-- 내비게이션 제목 -->
-
+      <h2 aria-label="카테고리영역"></h2>
       <div class="navigation__inner">
-        <!-- 카테고리별 내비게이션(메뉴) 영역 -->
+        <ul class="navigation__list one">
+          <li class="triangle">
+            <a href="/" aria-label="button"
+              ><i class="icon-clothes"></i> 패션의류/잡화</a
+            >
+          </li>
+          <li><i class="icon-beauty">뷰티</i></li>
+          <li><i class="icon-baby">출산유아동</i></li>
+          <li><i class="icon-foods">식품</i></li>
+          <li><i class="icon-kitchenware">주방용품</i></li>
+          <li><i class="icon-houseware">생활용품</i></li>
+          <li><i class="icon-interior">홈인테리어</i></li>
+          <li><i class="icon-appliances">가전디지털</i></li>
+          <li><i class="icon-sports">스포츠</i></li>
+          <li><i class="icon-car">자동차용품</i></li>
+          <li><i class="icon-book">도서음반</i></li>
+          <li><i class="icon-toy">완구취미</i></li>
+          <li><i class="icon-stationery">문구오피스</i></li>
+          <li><i class="icon-pet">반려동물</i></li>
+          <li><i class="icon-travel">여행티켓</i></li>
+          <li>
+            <i class="icon-theme">테마관</i>
+            <img src="./assets/icon/new.svg" alt="" />
+          </li>
+          <ul class="navigation__list two">
+            <a href="/" aria-label="button">
+              <li class="triangle">여성패션</li>
+            </a>
+            <li>남성패션</li>
+            <li>유아동패션</li>
+          </ul>
+          <ul class="navigation__list three">
+            <a href="/"><li class="blue-color">의류</li></a>
+            <a href="/"> <li>속옷/잠옷</li></a>
+            <a href="/"> <li>신발</li></a>
+          </ul>
+        </ul>
       </div>
     </nav>
-
     <main class="main">
       <!-- 메인 콘텐츠 영역 -->
       <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
@@ -85,7 +120,7 @@
             <span class="bordered"></span>전자금융거래분쟁처리담당
           </p>
           <a href="tel:1577-7011">
-            <p class="tel-num" style="font-size: 48px">1577-7011</p>
+            <p class="tel-num">1577-7011</p>
           </a>
           <p>서울시 송파구 송파대로 570</p>
           <a href="mailto:help@coupang.com?subject=문의사항">
