@@ -8,10 +8,7 @@
     <link rel="icon" href="/assets/favicon/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/stylesheets/main.css" />
     <link rel="stylesheet" href="./assets/iconfontsvg/style.css" />
     <script type="module" src="./js/main.js"></script>
@@ -26,7 +23,7 @@
         <!-- 카테고리 버튼은 .header__inner 영역 안에 마크업 해주세요. -->
         <button class="button--category">
           <img src="./assets/icon/hamburger.svg" alt="카테고리 버튼" />
-          <p>카테고리</p>
+          <span class="btn-pd">카테고리</span>
         </button>
       </div>
     </header>
@@ -35,11 +32,14 @@
       <!-- 내비게이션 제목 -->
       <h2 aria-label="카테고리영역"></h2>
       <div class="navigation__inner">
-        <ul class="navigation__list one">
+        <ul class="navigation__list is--active one">
           <li class="triangle">
-            <a href="/" aria-label="button"
-              ><i class="icon-clothes"></i> 패션의류/잡화</a
-            >
+            <a href="/" aria-label="button"><i class="icon-clothes"></i> 패션의류/잡화</a>
+            <ul class="navigation__list is--active two">
+              <li class="triangle"><a href="/" aria-label="button">여성패션</a></li>
+              <li><a href="/" class="color-none">남성패션</a></li>
+              <li><a href="/" class="color-none">유아동패션</a></li>
+            </ul>
           </li>
           <li><i class="icon-beauty">뷰티</i></li>
           <li><i class="icon-baby">출산유아동</i></li>
@@ -56,21 +56,14 @@
           <li><i class="icon-pet">반려동물</i></li>
           <li><i class="icon-travel">여행티켓</i></li>
           <li>
-            <i class="icon-theme">테마관</i>
+            <i class="icon-theme"></i> 테마관
             <img src="./assets/icon/new.svg" alt="" />
+            <ul class="navigation__list three">
+              <li class="blue-color"><a href="/">의류</a></li>
+              <li><a href="/" class="color-none">속옷/잠옷</a></li>
+              <li><a href="/" class="color-none">신발</a></li>
+            </ul>
           </li>
-          <ul class="navigation__list two">
-            <a href="/" aria-label="button">
-              <li class="triangle">여성패션</li>
-            </a>
-            <li>남성패션</li>
-            <li>유아동패션</li>
-          </ul>
-          <ul class="navigation__list three">
-            <a href="/"><li class="blue-color">의류</li></a>
-            <a href="/"> <li>속옷/잠옷</li></a>
-            <a href="/"> <li>신발</li></a>
-          </ul>
         </ul>
       </div>
     </nav>
@@ -129,53 +122,29 @@
         </div>
         <div class="footer-cash">
           <p>우리은행 채무지급보증 안내</p>
-          당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을
-          체결하여 안전거래를 보장하고 있습니다.
+          당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.
         </div>
       </div>
     </footer>
     <div class="footer-last">
       <div class="copyright">
         <p>
-          사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가
-          판매하는마켓플레이스(오픈마켓)상품이 포함되어 있습니다. <br />
-          마켓플레이스(오픈마켓)상품의 경우 쿠팡은 통신판매중개자이며 통신판매의
-          당사자가 아닙니다. <br />쿠팡은 마켓플레이스(오픈마켓)상품, 거래정보
-          및 거래 등에 대하여 책임을 지지 않습니다. <br />쿠팡은 소비자 보호와
-          안전거래를 위해 신뢰관계센터(CM112@coupang.com)를 운영하고 있으며,
-          관련 분쟁이 발생할 경우 별도의 분쟁처리절차에 의거 분쟁이
-          처리됩니다.<br />
+          사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가 판매하는마켓플레이스(오픈마켓)상품이 포함되어 있습니다. <br />
+          마켓플레이스(오픈마켓)상품의 경우 쿠팡은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br />쿠팡은 마켓플레이스(오픈마켓)상품, 거래정보 및 거래
+          등에 대하여 책임을 지지 않습니다. <br />쿠팡은 소비자 보호와 안전거래를 위해 신뢰관계센터(CM112@coupang.com)를 운영하고 있으며, 관련 분쟁이 발생할
+          경우 별도의 분쟁처리절차에 의거 분쟁이 처리됩니다.<br />
           Copyright ⓒ Coupang Corp. 2010-2020 All Right Reserved.
         </p>
       </div>
       <div class="shortcut-icon">
-        <a
-          href="https://www.facebook.com/ "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.facebook.com/ " target="_blank" rel="noopener noreferrer">
           <img src="./assets/icon/sns-facebook.svg" alt="페이스북 바로가기" />
         </a>
-        <a
-          href="https://section.blog.naver.com/ "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="./assets/icon/sns-naver-blog.svg"
-            alt="네이버블로그 바로가기"
-          />
+        <a href="https://section.blog.naver.com/ " target="_blank" rel="noopener noreferrer">
+          <img src="./assets/icon/sns-naver-blog.svg" alt="네이버블로그 바로가기" />
         </a>
-        <a
-          href="https://www.instagram.com/ "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="insta"
-            src="./assets/icon/sns-instagram.svg"
-            alt="인스타그램 바로가기"
-          />
+        <a href="https://www.instagram.com/ " target="_blank" rel="noopener noreferrer">
+          <img class="insta" src="./assets/icon/sns-instagram.svg" alt="인스타그램 바로가기" />
         </a>
       </div>
     </div>
